@@ -11,11 +11,13 @@ class ListItem extends Component {
         console.log(this.props);
         return (
             <TouchableWithoutFeedback>
-                <CardSection>
-                    <Text style={titleStyle}>
-                        {this.props.library.title}
-                    </Text>
-                </CardSection>
+                <View>
+                    <CardSection>
+                        <Text style={titleStyle}>
+                            {this.props.library.title}
+                        </Text>
+                    </CardSection>
+                </View>
             </TouchableWithoutFeedback>
         );
     }
