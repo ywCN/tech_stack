@@ -4,7 +4,7 @@ import SelectionReducer from './SelectionReducer';
 
 export default combineReducers({
     libraries: LibraryReducer,
-    selectionReducer: SelectionReducer
+    selectedLibraryId: SelectionReducer
 });
 
 // console.log(store.getState());
