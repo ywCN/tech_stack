@@ -6,10 +6,14 @@ import reducers from './reducers';
 import { Header } from './components/common';
 
 const App = () => {
-    return (
+    return ( // Provider can only have one child
         <Provider store={createStore(reducers)}>
-            <Header headerText='Tech Stack' />
-            <View />
+            <View>
+                <Header headerText='Tech Stack' />
+                ....
+                .
+                ...
+            </View>
         </Provider>
     );
 };
