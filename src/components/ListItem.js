@@ -13,7 +13,7 @@ class ListItem extends Component {
     componentWillUpdate() {
         LayoutAnimation.spring();
     }
-    
+
     renderDescription() {
         const { library, expanded } = this.props;
         if (expanded) {
@@ -61,4 +61,4 @@ const mapStateToProps = (state, ownProps) => {
 };
 
 
-export default connect(mapStateToProps, actions)(ListItem); // no mapToStateProps, so null
+export default connect(mapStateToProps, actions)(ListItem); //if no mapToStateProps, use null
