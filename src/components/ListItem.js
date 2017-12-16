@@ -6,15 +6,17 @@ import * as actions from '../actions'; // import many things as we need all acti
 
 class ListItem extends Component {
     render() {
-
         const { titleStyle } = styles;
-        console.log(this.props);
+        const { id, title } = this.props.library;
+        
         return (
-            <TouchableWithoutFeedback>
+            <TouchableWithoutFeedback 
+                onPress={() => this.props.selectLibary(id)}
+            >
                 <View>
                     <CardSection>
                         <Text style={titleStyle}>
-                            {this.props.library.title}
+                            {title}
                         </Text>
                     </CardSection>
                 </View>
