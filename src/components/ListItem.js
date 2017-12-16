@@ -10,7 +10,7 @@ import { CardSection } from './common';
 import * as actions from '../actions'; // import many things as we need all actions
 
 class ListItem extends Component {
-    componentWillUpdate() {
+    componentWillUpdate() { // will be called whenever component will be rerendered
         LayoutAnimation.spring();
     }
 
