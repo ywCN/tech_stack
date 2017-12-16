@@ -7,9 +7,10 @@ import { Header } from './components/common';
 import LibraryList from './components/LibraryList';
 
 const App = () => {
+    // {{ flex: 1 }}, one{} is for JSX, one is for JS object
     return ( // Provider can only have one child
         <Provider store={createStore(reducers)}>
-            <View>
+            <View style={{ flex: 1 }}>
                 <Header headerText='Tech Stack' />
                 <LibraryList />
             </View>
