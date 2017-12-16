@@ -7,5 +7,10 @@ class LibraryList extends Component {
     }
 }
 
+// takes global state object and provides it as props
+const mapStateToProps = state => {
+    console.log(state);
+};
+
 // connect() returns a function
-export default connect()(LibraryList);
+export default connect(mapStateToProps)(LibraryList);
