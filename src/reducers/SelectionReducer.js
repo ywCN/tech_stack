@@ -1,5 +1,5 @@
-export default (state, action) => {
-    // console.log(action);
+export default (state = null, action) => {
+    // null is for default state
     // // cannot return undefined
     // return null; // null for we do not want a selected row when boot up
     switch (action.type) {
