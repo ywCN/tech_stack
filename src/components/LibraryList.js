@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ListView } from 'react-native';
 import { connect } from 'react-redux';
+import ListItem from './ListItem';
 
 class LibraryList extends Component {
     componentWillMount() {
@@ -12,8 +13,8 @@ class LibraryList extends Component {
     }
 
     // will return a single library
-    renderRow() {
-
+    renderRow(library) {
+        return <ListItem library={library} />;
     }
 
     render() {
